@@ -1,0 +1,18 @@
+{
+    "dS(closed)": {
+        "coords": "t, psi, theta, phi",
+        "matrix": "[['-1', '0', '0', '0'], ['0', 'alpha**2*cosh(t/alpha)**2', '0', '0'], ['0', '0', 'alpha**2*sin(psi)**2*cosh(t/alpha)**2', '0'], ['0', '0', '0', 'alpha**2*sin(psi)**2*sin(theta)**2*cosh(t/alpha)**2']]"
+    },
+    "ds(open 2d)": {
+        "coords": "t, y",
+        "matrix": "[['-1', '0'], ['0', 'exp(2*t/alpha)']]"
+    },
+    "Rindler": {
+        "coords": "t, x, y, z",
+        "matrix": "[['-alpha**2*x**2', '0', '0', '0'], ['0', '1', '0', '0'], ['0', '0', '1', '0'], ['0', '0', '0', '1']]"
+    },
+    "Flat Spherical": {
+        "coords": "r, theta, phi",
+        "matrix": "[['1', '0', '0'], ['0', 'r**2*sin(phi)**2', '0'], ['0', '0', 'r**2']]"
+    }
+}
