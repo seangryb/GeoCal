@@ -1,0 +1,48 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[margin=2cm]{geometry}
+\usepackage{longtable}
+\begin{document}
+
+\section*{Geometry: dS(closed)}
+\subsection*{Coordinates:}
+$$\left( t, \  \psi, \  \theta, \  \phi\right)$$
+
+\subsection*{Metric Tensor ($g_{\mu\nu}$):}
+\begin{longtable}{c}
+$\left[\begin{matrix}-1 & 0 & 0 & 0\\0 & \alpha^{2} \cosh^{2}{\left(\frac{t}{\alpha} \right)} & 0 & 0\\0 & 0 & \alpha^{2} \sin^{2}{\left(\psi \right)} \cosh^{2}{\left(\frac{t}{\alpha} \right)} & 0\\0 & 0 & 0 & \alpha^{2} \sin^{2}{\left(\psi \right)} \sin^{2}{\left(\theta \right)} \cosh^{2}{\left(\frac{t}{\alpha} \right)}\end{matrix}\right]$ \\
+\end{longtable}
+
+\subsection*{Christoffel Symbols ($\Gamma^{\lambda}{}_{\mu\nu}$):}
+\begin{longtable}{c}
+$\left[\begin{matrix}\left[\begin{matrix}0 & 0 & 0 & 0\\0 & \alpha \sinh{\left(\frac{t}{\alpha} \right)} \cosh{\left(\frac{t}{\alpha} \right)} & 0 & 0\\0 & 0 & \alpha \sin^{2}{\left(\psi \right)} \sinh{\left(\frac{t}{\alpha} \right)} \cosh{\left(\frac{t}{\alpha} \right)} & 0\\0 & 0 & 0 & \alpha \sin^{2}{\left(\psi \right)} \sin^{2}{\left(\theta \right)} \sinh{\left(\frac{t}{\alpha} \right)} \cosh{\left(\frac{t}{\alpha} \right)}\end{matrix}\right] & \left[\begin{matrix}0 & \frac{\sinh{\left(\frac{t}{\alpha} \right)}}{\alpha \cosh{\left(\frac{t}{\alpha} \right)}} & 0 & 0\\\frac{\sinh{\left(\frac{t}{\alpha} \right)}}{\alpha \cosh{\left(\frac{t}{\alpha} \right)}} & 0 & 0 & 0\\0 & 0 & - \sin{\left(\psi \right)} \cos{\left(\psi \right)} & 0\\0 & 0 & 0 & - \sin{\left(\psi \right)} \sin^{2}{\left(\theta \right)} \cos{\left(\psi \right)}\end{matrix}\right] & \left[\begin{matrix}0 & 0 & \frac{\sinh{\left(\frac{t}{\alpha} \right)}}{\alpha \cosh{\left(\frac{t}{\alpha} \right)}} & 0\\0 & 0 & \frac{\cos{\left(\psi \right)}}{\sin{\left(\psi \right)}} & 0\\\frac{\sinh{\left(\frac{t}{\alpha} \right)}}{\alpha \cosh{\left(\frac{t}{\alpha} \right)}} & \frac{\cos{\left(\psi \right)}}{\sin{\left(\psi \right)}} & 0 & 0\\0 & 0 & 0 & - \sin{\left(\theta \right)} \cos{\left(\theta \right)}\end{matrix}\right] & \left[\begin{matrix}0 & 0 & 0 & \frac{\sinh{\left(\frac{t}{\alpha} \right)}}{\alpha \cosh{\left(\frac{t}{\alpha} \right)}}\\0 & 0 & 0 & \frac{\cos{\left(\psi \right)}}{\sin{\left(\psi \right)}}\\0 & 0 & 0 & \frac{\cos{\left(\theta \right)}}{\sin{\left(\theta \right)}}\\\frac{\sinh{\left(\frac{t}{\alpha} \right)}}{\alpha \cosh{\left(\frac{t}{\alpha} \right)}} & \frac{\cos{\left(\psi \right)}}{\sin{\left(\psi \right)}} & \frac{\cos{\left(\theta \right)}}{\sin{\left(\theta \right)}} & 0\end{matrix}\right]\end{matrix}\right]$ \\
+\end{longtable}
+
+\subsection*{Riemann Curvature Tensor ($R^{\lambda}{}_{\mu\nu\rho}$):}
+\begin{longtable}{c}
+$\left[\begin{matrix}\left[\begin{matrix}0 & 0 & 0 & 0\\0 & 0 & 0 & 0\\0 & 0 & 0 & 0\\0 & 0 & 0 & 0\end{matrix}\right] & \left[\begin{matrix}0 & \cosh^{2}{\left(\frac{t}{\alpha} \right)} & 0 & 0\\- \cosh^{2}{\left(\frac{t}{\alpha} \right)} & 0 & 0 & 0\\0 & 0 & 0 & 0\\0 & 0 & 0 & 0\end{matrix}\right] & \left[\begin{matrix}0 & 0 & \sin^{2}{\left(\psi \right)} \cosh^{2}{\left(\frac{t}{\alpha} \right)} & 0\\0 & 0 & 0 & 0\\- \sin^{2}{\left(\psi \right)} \cosh^{2}{\left(\frac{t}{\alpha} \right)} & 0 & 0 & 0\\0 & 0 & 0 & 0\end{matrix}\right] & \left[\begin{matrix}0 & 0 & 0 & \sin^{2}{\left(\psi \right)} \sin^{2}{\left(\theta \right)} \cosh^{2}{\left(\frac{t}{\alpha} \right)}\\0 & 0 & 0 & 0\\0 & 0 & 0 & 0\\- \sin^{2}{\left(\psi \right)} \sin^{2}{\left(\theta \right)} \cosh^{2}{\left(\frac{t}{\alpha} \right)} & 0 & 0 & 0\end{matrix}\right]\\\left[\begin{matrix}0 & \frac{1}{\alpha^{2}} & 0 & 0\\- \frac{1}{\alpha^{2}} & 0 & 0 & 0\\0 & 0 & 0 & 0\\0 & 0 & 0 & 0\end{matrix}\right] & \left[\begin{matrix}0 & 0 & 0 & 0\\0 & 0 & 0 & 0\\0 & 0 & 0 & 0\\0 & 0 & 0 & 0\end{matrix}\right] & \left[\begin{matrix}0 & 0 & 0 & 0\\0 & 0 & \sin^{2}{\left(\psi \right)} \cosh^{2}{\left(\frac{t}{\alpha} \right)} & 0\\0 & - \sin^{2}{\left(\psi \right)} \cosh^{2}{\left(\frac{t}{\alpha} \right)} & 0 & 0\\0 & 0 & 0 & 0\end{matrix}\right] & \left[\begin{matrix}0 & 0 & 0 & 0\\0 & 0 & 0 & \sin^{2}{\left(\psi \right)} \sin^{2}{\left(\theta \right)} \cosh^{2}{\left(\frac{t}{\alpha} \right)}\\0 & 0 & 0 & 0\\0 & - \sin^{2}{\left(\psi \right)} \sin^{2}{\left(\theta \right)} \cosh^{2}{\left(\frac{t}{\alpha} \right)} & 0 & 0\end{matrix}\right]\\\left[\begin{matrix}0 & 0 & \frac{1}{\alpha^{2}} & 0\\0 & 0 & 0 & 0\\- \frac{1}{\alpha^{2}} & 0 & 0 & 0\\0 & 0 & 0 & 0\end{matrix}\right] & \left[\begin{matrix}0 & 0 & 0 & 0\\0 & 0 & - \cosh^{2}{\left(\frac{t}{\alpha} \right)} & 0\\0 & \cosh^{2}{\left(\frac{t}{\alpha} \right)} & 0 & 0\\0 & 0 & 0 & 0\end{matrix}\right] & \left[\begin{matrix}0 & 0 & 0 & 0\\0 & 0 & 0 & 0\\0 & 0 & 0 & 0\\0 & 0 & 0 & 0\end{matrix}\right] & \left[\begin{matrix}0 & 0 & 0 & 0\\0 & 0 & 0 & 0\\0 & 0 & 0 & \sin^{2}{\left(\psi \right)} \sin^{2}{\left(\theta \right)} \cosh^{2}{\left(\frac{t}{\alpha} \right)}\\0 & 0 & - \sin^{2}{\left(\psi \right)} \sin^{2}{\left(\theta \right)} \cosh^{2}{\left(\frac{t}{\alpha} \right)} & 0\end{matrix}\right]\\\left[\begin{matrix}0 & 0 & 0 & \frac{1}{\alpha^{2}}\\0 & 0 & 0 & 0\\0 & 0 & 0 & 0\\- \frac{1}{\alpha^{2}} & 0 & 0 & 0\end{matrix}\right] & \left[\begin{matrix}0 & 0 & 0 & 0\\0 & 0 & 0 & - \cosh^{2}{\left(\frac{t}{\alpha} \right)}\\0 & 0 & 0 & 0\\0 & \cosh^{2}{\left(\frac{t}{\alpha} \right)} & 0 & 0\end{matrix}\right] & \left[\begin{matrix}0 & 0 & 0 & 0\\0 & 0 & 0 & 0\\0 & 0 & 0 & - \sin^{2}{\left(\psi \right)} \cosh^{2}{\left(\frac{t}{\alpha} \right)}\\0 & 0 & \sin^{2}{\left(\psi \right)} \cosh^{2}{\left(\frac{t}{\alpha} \right)} & 0\end{matrix}\right] & \left[\begin{matrix}0 & 0 & 0 & 0\\0 & 0 & 0 & 0\\0 & 0 & 0 & 0\\0 & 0 & 0 & 0\end{matrix}\right]\end{matrix}\right]$ \\
+\end{longtable}
+
+\subsection*{Ricci Tensor ($R_{\mu\nu}$):}
+\begin{longtable}{c}
+$\left[\begin{matrix}- \frac{3}{\alpha^{2}} & 0 & 0 & 0\\0 & 3 \cosh^{2}{\left(\frac{t}{\alpha} \right)} & 0 & 0\\0 & 0 & 3 \sin^{2}{\left(\psi \right)} \cosh^{2}{\left(\frac{t}{\alpha} \right)} & 0\\0 & 0 & 0 & 3 \sin^{2}{\left(\psi \right)} \sin^{2}{\left(\theta \right)} \cosh^{2}{\left(\frac{t}{\alpha} \right)}\end{matrix}\right]$ \\
+\end{longtable}
+
+\subsection*{Ricci Scalar ($R$):}
+\begin{longtable}{c}
+$\frac{12}{\alpha^{2}}$ \\
+\end{longtable}
+
+\subsection*{Einstein Tensor ($G_{\mu\nu}$):}
+\begin{longtable}{c}
+$\left[\begin{matrix}\frac{3.0}{\alpha^{2}} & 0 & 0 & 0\\0 & - 3.0 \cosh^{2}{\left(\frac{t}{\alpha} \right)} & 0 & 0\\0 & 0 & - 3.0 \sin^{2}{\left(\psi \right)} \cosh^{2}{\left(\frac{t}{\alpha} \right)} & 0\\0 & 0 & 0 & - 3.0 \sin^{2}{\left(\psi \right)} \sin^{2}{\left(\theta \right)} \cosh^{2}{\left(\frac{t}{\alpha} \right)}\end{matrix}\right]$ \\
+\end{longtable}
+
+\subsection*{Weyl Tensor ($C^{\lambda}{}_{\mu\nu\rho}$):}
+\begin{longtable}{c}
+$\left[\begin{matrix}\left[\begin{matrix}0 & 0 & 0 & 0\\0 & 0 & 0 & 0\\0 & 0 & 0 & 0\\0 & 0 & 0 & 0\end{matrix}\right] & \left[\begin{matrix}0 & 0 & 0 & 0\\0 & 0 & 0 & 0\\0 & 0 & 0 & 0\\0 & 0 & 0 & 0\end{matrix}\right] & \left[\begin{matrix}0 & 0 & 0 & 0\\0 & 0 & 0 & 0\\0 & 0 & 0 & 0\\0 & 0 & 0 & 0\end{matrix}\right] & \left[\begin{matrix}0 & 0 & 0 & 0\\0 & 0 & 0 & 0\\0 & 0 & 0 & 0\\0 & 0 & 0 & 0\end{matrix}\right]\\\left[\begin{matrix}0 & 0 & 0 & 0\\0 & 0 & 0 & 0\\0 & 0 & 0 & 0\\0 & 0 & 0 & 0\end{matrix}\right] & \left[\begin{matrix}0 & 0 & 0 & 0\\0 & 0 & 0 & 0\\0 & 0 & 0 & 0\\0 & 0 & 0 & 0\end{matrix}\right] & \left[\begin{matrix}0 & 0 & 0 & 0\\0 & 0 & 0 & 0\\0 & 0 & 0 & 0\\0 & 0 & 0 & 0\end{matrix}\right] & \left[\begin{matrix}0 & 0 & 0 & 0\\0 & 0 & 0 & 0\\0 & 0 & 0 & 0\\0 & 0 & 0 & 0\end{matrix}\right]\\\left[\begin{matrix}0 & 0 & 0 & 0\\0 & 0 & 0 & 0\\0 & 0 & 0 & 0\\0 & 0 & 0 & 0\end{matrix}\right] & \left[\begin{matrix}0 & 0 & 0 & 0\\0 & 0 & 0 & 0\\0 & 0 & 0 & 0\\0 & 0 & 0 & 0\end{matrix}\right] & \left[\begin{matrix}0 & 0 & 0 & 0\\0 & 0 & 0 & 0\\0 & 0 & 0 & 0\\0 & 0 & 0 & 0\end{matrix}\right] & \left[\begin{matrix}0 & 0 & 0 & 0\\0 & 0 & 0 & 0\\0 & 0 & 0 & 0\\0 & 0 & 0 & 0\end{matrix}\right]\\\left[\begin{matrix}0 & 0 & 0 & 0\\0 & 0 & 0 & 0\\0 & 0 & 0 & 0\\0 & 0 & 0 & 0\end{matrix}\right] & \left[\begin{matrix}0 & 0 & 0 & 0\\0 & 0 & 0 & 0\\0 & 0 & 0 & 0\\0 & 0 & 0 & 0\end{matrix}\right] & \left[\begin{matrix}0 & 0 & 0 & 0\\0 & 0 & 0 & 0\\0 & 0 & 0 & 0\\0 & 0 & 0 & 0\end{matrix}\right] & \left[\begin{matrix}0 & 0 & 0 & 0\\0 & 0 & 0 & 0\\0 & 0 & 0 & 0\\0 & 0 & 0 & 0\end{matrix}\right]\end{matrix}\right]$ \\
+\end{longtable}
+
+\end{document}

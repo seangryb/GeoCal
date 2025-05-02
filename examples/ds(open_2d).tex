@@ -1,0 +1,44 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage[margin=1in]{geometry}
+\pagestyle{plain}
+\begin{document}
+\section*{Geometry: ds(open 2d)}
+\subsection*{Coordinates}
+\[
+\left( t, \  y\right)
+\]
+\vspace{1em}
+\subsection*{Metric Tensor ($g_{\mu\nu}$)}
+\[
+\left[\begin{matrix}-1 & 0\\0 & e^{\frac{2 t}{\alpha}}\end{matrix}\right]
+\]
+\vspace{1em}
+\subsection*{Christoffel Symbols ($\Gamma^{\lambda}{}_{\mu\nu}$)}
+\[
+\left[\begin{matrix}\left[\begin{matrix}0 & 0\\0 & \frac{e^{\frac{2 t}{\alpha}}}{\alpha}\end{matrix}\right] & \left[\begin{matrix}0 & \frac{1}{\alpha}\\\frac{1}{\alpha} & 0\end{matrix}\right]\end{matrix}\right]
+\]
+\vspace{1em}
+\subsection*{Riemann Curvature Tensor ($R^{\lambda}{}_{\mu\nu\rho}$)}
+\[
+\left[\begin{matrix}\left[\begin{matrix}0 & 0\\0 & 0\end{matrix}\right] & \left[\begin{matrix}0 & \frac{e^{\frac{2 t}{\alpha}}}{\alpha^{2}}\\- \frac{e^{\frac{2 t}{\alpha}}}{\alpha^{2}} & 0\end{matrix}\right]\\\left[\begin{matrix}0 & \frac{1}{\alpha^{2}}\\- \frac{1}{\alpha^{2}} & 0\end{matrix}\right] & \left[\begin{matrix}0 & 0\\0 & 0\end{matrix}\right]\end{matrix}\right]
+\]
+\vspace{1em}
+\subsection*{Ricci Tensor ($R_{\mu\nu}$)}
+\[
+\left[\begin{matrix}- \frac{1}{\alpha^{2}} & 0\\0 & \frac{e^{\frac{2 t}{\alpha}}}{\alpha^{2}}\end{matrix}\right]
+\]
+\vspace{1em}
+\subsection*{Ricci Scalar ($R$)}
+\[
+\frac{2}{\alpha^{2}}
+\]
+\vspace{1em}
+\subsection*{Einstein Tensor ($G_{\mu\nu}$)}
+\[
+\left[\begin{matrix}0 & 0\\0 & 0\end{matrix}\right]
+\]
+\vspace{1em}
+\end{document}
