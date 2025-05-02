@@ -31,7 +31,7 @@ You can install GeoCal using pre-built packages or by running from source.
 
 ### macOS (.dmg)
 
-1.  Download the latest `GeoCal-macOS.dmg` file from the [dist](https://github.com/seangryb/GeoCal/dist) directory.
+1.  Download the latest `GeoCal-macOS.dmg` file from the [release](release/) directory.
 2.  Double-click the `.dmg` file to open it.
 3.  Drag the `GeoCal` application icon into your `Applications` folder.
 4.  You may need to right-click (or Ctrl-click) the application and select "Open" the first time due to macOS Gatekeeper security.
@@ -39,7 +39,7 @@ You can install GeoCal using pre-built packages or by running from source.
 
 ### Windows (.zip)
 
-1.  Download the latest `GeoCal-Windows.zip` file from the [dist](https://github.com/seangryb/GeoCal/dist) directory.
+1.  Download the latest `GeoCal-Windows.zip` file from the [release](release/) directory.
 2.  Extract the contents of the `.zip` file to a location of your choice (e.g., `C:\Program Files\GeoCal`).
 3.  Navigate into the extracted folder and run `GeoCal.exe` (or the main executable).
 4.  The application includes a bundled version of TinyTeX for LaTeX rendering.
