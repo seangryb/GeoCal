@@ -31,7 +31,7 @@ You can install GeoCal using pre-built packages or by running from source.
 
 ### macOS (.dmg)
 
-1.  Download the latest `GeoCal-macOS.dmg` file from the [release](release/) directory.
+1.  Download the latest [macOS disk image](https://github.com/seangryb/GeoCal/releases/download/v1.0.0/GeoCal.dmg).
 2.  Double-click the `.dmg` file to open it.
 3.  Drag the `GeoCal` application icon into your `Applications` folder.
 4.  You may need to right-click (or Ctrl-click) the application and select "Open" the first time due to macOS Gatekeeper security.
@@ -39,7 +39,7 @@ You can install GeoCal using pre-built packages or by running from source.
 
 ### Windows (.zip)
 
-1.  Download the latest `GeoCal-Windows.zip` file from the [release](release/) directory.
+1.  Download the latest zipped [build files](https://github.com/seangryb/GeoCal/releases/download/v1.0.0/GeoCal.zip).
 2.  Extract the contents of the `.zip` file to a location of your choice (e.g., `C:\Program Files\GeoCal`).
 3.  Navigate into the extracted folder and run `GeoCal.exe` (or the main executable).
 4.  The application includes a bundled version of TinyTeX for LaTeX rendering.
@@ -90,7 +90,8 @@ Running from source requires Python, pip, and potentially a LaTeX distribution.
         *   Enter a unique name.
         *   Define coordinates as comma-separated symbols (e.g., `t, r, theta, phi`).
         *   Fill in the upper triangle of the metric tensor components (g<sub>μν</sub>) using SymPy-compatible expressions. The lower triangle will auto-fill due to symmetry.
-        *   Click "Save / Update". Your metric will appear under "--- Custom ---".
+        *   Select a previously saved custom metric from the dropdown (under "--- Custom ---") to view its details. You can then edit its components or coordinates (the name cannot be changed) or delete the metric entirely.
+            *   **Note:** Refer to the `custom_metrics.json` file included in the source code for examples of how to structure custom metrics.
     *   Select a previously saved custom metric to view, edit (only components/coords, not name), or delete it.
 3.  **Choose Rendering Mode (Optional):** Go to `Options -> Rendering Mode` and select `LaTeX` (requires valid LaTeX setup) or `Plain Text`.
 4.  **Select Curvature Quantities:** Check the boxes for the tensors/scalars you want to compute.
